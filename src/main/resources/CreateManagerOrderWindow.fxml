@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="919.0" prefWidth="1264.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.CreateManagerOrderWindowController">
+   <children>
+      <TableView fx:id="productTableView" editable="true" layoutX="630.0" layoutY="432.0" prefHeight="324.0" prefWidth="487.0">
+         <columns>
+            <TableColumn fx:id="productIdColumn" prefWidth="94.0" text="Id" />
+            <TableColumn fx:id="productNameColumn" prefWidth="155.0" text="Product name" />
+            <TableColumn fx:id="productCountColumn" prefWidth="116.0" text="Product count" />
+            <TableColumn fx:id="productPriceColumn" minWidth="4.0" prefWidth="121.0" text="Product price" />
+         </columns>
+      </TableView>
+      <TextField fx:id="productIdField" editable="false" layoutX="631.0" layoutY="796.0" prefHeight="31.0" prefWidth="84.0" />
+      <TextField fx:id="productNameField" editable="false" layoutX="726.0" layoutY="796.0" prefHeight="31.0" prefWidth="165.0" />
+      <TextField fx:id="productCountField" editable="false" layoutX="903.0" layoutY="796.0" prefHeight="31.0" prefWidth="99.0" />
+      <TextField fx:id="productPriceField" editable="false" layoutX="1011.0" layoutY="796.0" prefHeight="31.0" prefWidth="106.0" />
+      <TableView fx:id="managerTableView" layoutX="278.0" layoutY="40.0" prefHeight="324.0" prefWidth="638.0">
+         <columns>
+            <TableColumn fx:id="managerOrderIdColumn" prefWidth="165.0" text="ManagerOrderId" />
+            <TableColumn fx:id="amountColumn" prefWidth="146.0" text="Amount" />
+            <TableColumn fx:id="statusPColumn" prefWidth="163.0" text="StatusСonfirmation" />
+            <TableColumn fx:id="statusFullPayColumn" minWidth="0.0" prefWidth="163.0" text="StatusFullPay" />
+         </columns>
+      </TableView>
+      <Button layoutX="822.0" layoutY="856.0" mnemonicParsing="false" onAction="#createNewOrderClicked" text="Create new order">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="cproductTableView" editable="true" layoutX="45.0" layoutY="432.0" prefHeight="324.0" prefWidth="487.0">
+         <columns>
+            <TableColumn fx:id="cproductIdColumn" prefWidth="70.0" text="Id" />
+            <TableColumn fx:id="cproductNameColumn" prefWidth="179.0" text="Product name" />
+            <TableColumn fx:id="cproductCountColumn" prefWidth="116.0" text="Product count" />
+            <TableColumn fx:id="cproductPriceColumn" minWidth="4.0" prefWidth="121.0" text="Product price" />
+         </columns>
+      </TableView>
+      <TextField fx:id="cproductIdField" editable="false" layoutX="46.0" layoutY="796.0" prefHeight="31.0" prefWidth="84.0" />
+      <TextField fx:id="cproductNameField" layoutX="141.0" layoutY="796.0" prefHeight="31.0" prefWidth="165.0" />
+      <TextField fx:id="cproductCountField" layoutX="318.0" layoutY="796.0" prefHeight="31.0" prefWidth="99.0" />
+      <TextField fx:id="cproductPriceField" layoutX="426.0" layoutY="796.0" prefHeight="31.0" prefWidth="106.0" />
+      <Button layoutX="237.0" layoutY="856.0" mnemonicParsing="false" onAction="#editProductClicked" text="Edit  product">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="237.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For Clients" />
+      <TextField fx:id="productManagerCountField" layoutX="1145.0" layoutY="788.0" prefHeight="31.0" prefWidth="84.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Text layoutX="1133.0" layoutY="784.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your quantity">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#backClicked" text="Back" />
+      <Button layoutX="1051.0" layoutY="856.0" mnemonicParsing="false" text="Add for client">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

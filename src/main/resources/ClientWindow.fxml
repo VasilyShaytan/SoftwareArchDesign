@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.ClientWindowController">
+   <children>
+      <Text fx:id="welcomeText" layoutX="170.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" wrappingWidth="246.6708984375">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ListView fx:id="orderView" layoutX="35.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="325.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" wrappingWidth="106.6708984375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="orderDesc" layoutX="333.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="181.6708984375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your orders:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="newOrderButton" layoutX="235.0" layoutY="326.0" mnemonicParsing="false" onAction="#createOrderClicked" text="Create new order">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backClicked" text="Back" />
+      <TextField fx:id="balanceField" editable="false" layoutX="573.0" layoutY="22.0" prefHeight="39.0" prefWidth="139.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Text layoutX="496.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="643.0" layoutY="130.0" mnemonicParsing="false" onAction="#topUpClicked" text="Top up" />
+      <Button fx:id="payButton" disable="true" layoutX="35.0" layoutY="326.0" mnemonicParsing="false" onAction="#payClicked" text="Pay order">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="newBalanceField" layoutX="574.0" layoutY="81.0" prefHeight="39.0" prefWidth="139.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
